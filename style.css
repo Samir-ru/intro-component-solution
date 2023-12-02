@@ -1,0 +1,158 @@
+
+/* - Red: hsl(0, 100%, 74%) 
+- Green: hsl(154, 59%, 51%)
+- Blue: hsl(248, 32%, 49%)
+- Dark Blue: hsl(249, 10%, 26%) 
+- Grayish Blue: hsl(246, 25%, 77%) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(images/bg-intro-mobile.png);
+    background-color: hsl(0, 100%, 74%);
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.text{
+    text-align: center;
+    color: white;
+}
+.text h1{
+    font-size: 23px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.text p{
+    margin-bottom: 20px;
+}
+
+.trial{
+    background-color: hsl(248, 32%, 49%);
+    text-align: center;
+    color: white;
+    padding: 26px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 7px rgba(0, 0, 0, 0.179);
+}
+.login_card p{
+    font-size: 13px;
+    text-align: center;
+    color: hsl(246, 25%, 77%);
+    margin: 10px;
+}
+.trial span{
+    font-weight: 800;
+}
+.right_content{
+    padding: 15px;
+}
+
+.login_card{
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.inputsection{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid hsl(246, 25%, 77%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.inputsection img{
+    margin: 10px;
+    display: none;
+}
+input{
+    border: none;
+    margin: 10px;
+    color: black;
+    width: 70%;
+    font-weight: 500;
+}
+
+input:focus{
+    outline: none;
+}
+.free_trial{
+    width: 100%;
+    padding: 10px;
+    font-family: inherit;
+    background-color: hsl(154, 59%, 51%);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    margin-top: 10px;
+}
+
+
+.login_card a{
+    text-decoration: none;
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
+}
+
+button:hover{
+    opacity: 50%;
+}
+
+p.warnings{
+    text-align: right;
+    color: hsl(0, 100%, 74%);
+    font-style: italic;
+}
+.placeholder-color {
+    color: hsl(0, 100%, 74%);
+  }
+  
+  .e_mail.in_err::placeholder{
+    color: hsl(0, 100%, 74%);
+  }
+
+@media (min-width: 768px){
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    max-width: 1200px;
+    grid-gap: 100px;
+}
+.text{
+    text-align: left;
+    display: grid;
+    align-content: center;
+    width: 500px
+}
+
+.text h1{
+    font-size: 40px;
+}
+
+.right_content{
+    width: 500px;
+}
+}
+
+@media(max-width:540px){
+    .container{
+        width: 300px;
+    }
+}
